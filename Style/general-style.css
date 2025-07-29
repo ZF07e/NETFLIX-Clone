@@ -1,0 +1,436 @@
+body{
+    margin: 0;
+    min-width: 1020px;
+    background-color: #000;
+}
+
+*{
+    font-family: "Netflix Sans", sans-serif;
+    margin: 0;
+}
+
+#invalidAcc{
+    color: rgb(197, 20, 29);
+    font-weight: 400;
+}
+
+#topSection{
+ background-image: url("../Images/PH-en-20240513-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ width: 100%;
+ height: 100vh;
+}
+
+
+#centerform{
+    position: absolute; 
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 3.4rem;
+    height: 28rem;
+    justify-content: space-between;
+}
+
+#formTitle h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#email, #password{
+    background-color: rgba(22, 22, 22, 0.7);
+    padding: 1rem 1.2rem;
+    width: 17rem;
+    font-size: 1.05rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    border: solid 1px #646464;
+}
+
+#signInButton:hover{
+    background-color: rgb(184, 8, 17);
+}
+
+#signInCode:hover{
+    background-color: #6e6d6d54;
+}
+
+
+#signInButton, #signInCode{
+    cursor: pointer;
+    width: 100%;
+    padding: 0.6rem 1rem;
+}
+
+#signInButton{
+    background-color: rgb(229, 9, 20);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.3rem;
+    color: #fff;
+    border: none;
+    user-select: none;
+}
+
+#signInCode{
+    background-color: #88888854;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.3rem;
+    color: #fff;
+    border: none;
+    user-select: none;
+}
+
+#centerForm p{
+    font-weight: 300;
+    color: #acacac;
+}
+
+#rememberMeContainer, #newAccount{
+    width: 100%;
+    cursor: pointer;
+}
+
+#signUpNow{
+    cursor: pointer;
+    color: #fff;
+}
+
+#checkboxVox{
+    border: none;
+}
+
+/*  */
+
+#formTitle{
+    width: 100%;
+}
+
+#bgshadow{
+    background-color: #000000a1;
+    box-shadow: inset 0px 0px 100rem #000, inset 0px 0px 100rem #000, inset 0px 0px 1rem #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo{
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: rgb(229, 9, 20);
+    cursor: pointer;
+}
+
+header{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10rem;
+    z-index: 10;
+}
+
+#rightPanel{
+    display: flex;
+    column-gap: 1.2rem;
+    margin-right: 1rem;
+}
+
+#selectContainer{
+    background-color: rgba(22, 22, 22, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 1rem;
+    color: #fff;
+    border: solid 1px #646464;
+    border-radius: 0.3rem;
+}
+
+#selectContainer:focus-within{
+    outline: solid 2px #fff;
+}
+
+#selectImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.2rem;
+}
+
+#languageSelector{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-family: "Netflix Sans";
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
+}
+
+.select-items {
+    font-family: "Netflix Sans";
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    color: #000;
+}
+
+#languageSelector:focus{
+    outline: none;
+}
+
+#signIn{
+    background-color: rgb(229, 9, 20);
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.3rem;
+    color: #fff;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+#centerDiv{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font-weight: bold;
+    color: #fff;
+}
+
+#centerContents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12rem;
+}
+
+#centerContents h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 0;
+    text-size-adjust: 100%;
+}
+
+#p1{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 0.9rem;
+}
+
+#p2{
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+/* registerContainer */
+
+#registerContainer{
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+
+#registerTextbox{
+    background-color: rgba(22, 22, 22, 0.7);
+    padding: 1rem 1.2rem;
+    width: 20rem;
+    font-size: 1.05rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    border: solid 1px #646464;
+}
+
+#registerTextbox::placeholder{
+    color: #acacac;
+
+}
+
+#buttonRegister{
+    background-color: rgb(229, 9, 20);
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 0.25rem;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.25s;
+}
+
+#buttonRegister:hover{
+    background-color: rgb(197, 20, 29);
+}
+
+
+#buttonRegister:active{
+    background-color: rgb(175, 20, 27);
+}
+
+
+/* section2  */
+
+#section2, #section3, #section5{
+    display: flex;
+    padding-top: 0.5rem;
+    width: 100%;
+    height: 90vh;
+    background-color: #292929;
+}
+
+#tvPrev, #watchEvPrev{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+    padding: 0rem 5rem;
+
+}
+
+/* left section */
+
+#leftSectionTV{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32rem;
+    height: 80%;
+}
+
+#h2Tv{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#pTv{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* right section */
+
+#rightSectionTV{
+    display: flex;
+}
+
+#h2Tv,#pTv{
+    color: #fff;    
+}
+
+#MOdofokingTv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MOdofokingTv img{
+    width: 30rem;
+    position: absolute;
+    z-index: 2;
+}
+
+#TVvideo{
+    position: relative;
+}
+
+#TVvideo video{
+    width: 22rem;
+    margin-bottom: 0.7rem;
+}
+
+/* section 2 mobile */
+
+#phonePrev, #kidsProfPrev{
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+    padding: 0rem 5rem;
+}
+
+#phoneLeftSection{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#phoneLeftSection img{
+    width: 30rem;
+}
+
+/* rightsection Phone */
+
+#phoneRightSection, #kidsProfPrevRightSection{
+    color: #fff;
+    width: 30rem;
+}
+
+#phoneRightSection h2, #watchEvLeftSection h2, #kidsProfPrevRightSection h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#phoneRightSection p, #watchEvLeftSection p, #kidsProfPrevRightSection p{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#section4{
+    display: flex;
+    padding-top: 0.5rem;
+    width: 100%;
+    height: 80vh;
+    background-color: #292929;
+
+}
+
+#watchEvPrev{
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    padding: 0rem 16rem;
+}
+
+#watchEvLeftSection{
+    width: 25rem;
+}
+
+#kidsProfPrevLeftSection img{
+    width: 30rem;
+}
+
